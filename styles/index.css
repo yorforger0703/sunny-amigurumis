@@ -6,11 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif, Tahoma, sans-serif;
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -207,6 +206,12 @@ footer a {
     }
 }
 
+
+
+
+
+
+
 .menu {
     display: flex;
     align-items: center;
@@ -400,7 +405,7 @@ footer a {
     color: #fff;
 }
 
-.produtos .box-container .box .image .icons .carrinho {
+.produtos .box-container .box .image .icons .fas .fa-shopping-cart {
     border-left: .1rem solid #fff;
     border-right: .1rem solid #fff7;
     width: 100%;
