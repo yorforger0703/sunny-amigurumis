@@ -8,6 +8,7 @@
     <link rel="icon" type="png" href="./icons/trico.png">
 
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./javascript.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -30,7 +31,12 @@
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
+            <span id="contador-carrinho"
+                style="background: red; color: white; border-radius: 50%; padding: 0 5px; font-size: 0.8em;">0</span>
             <a href="#" class="fas fa-user"></a>
+            </div>
+            </a>
+        </div>
         </div>
     </header>
 
@@ -39,7 +45,8 @@
             <h1>Sunny Amigurumis</h1>
             <span> Amigurumis Personalizados </span>
             <p>Olá, essa página é dedicada aos amigurumis feitos por mim. Aqui você poderá encontrar diversos produtos
-                de qualidade, incluindo personagens de filmes, séries e animes, além de outras peças produzidas de forma artesanal e
+                de qualidade, incluindo personagens de filmes, séries e animes, além de outras peças produzidas de forma
+                artesanal e
                 completamente personalizada com linha de crochê.</p>
             <a href="#" class="btn">Compre Agora</a>
         </div>
@@ -59,7 +66,8 @@
         </div>
         <div class="content">
             <h3>Porque comprar conosco?</h3>
-            <p>Nossos produtos são feitos com linha ecológica própria para amigurumi. São feitos pensados exclusivamente para
+            <p>Nossos produtos são feitos com linha ecológica própria para amigurumi. São feitos pensados exclusivamente
+                para
                 você, cliente, que merece um produto de qualidade e feito com muito carinho!</p>
             <p>Comprando conosco, você também terá acesso a diversos benefícios como:
             </p>
@@ -109,15 +117,17 @@
 
         <div class="box-container">
 
-            
+
             <div class="box">
                 <span class="desconto">-5%</span>
                 <div class="image">
                     <img src="./images/jinx.png" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Adicione no Carrinho</a>
+                        <a href="#" class="cart-btn" onclick="adicionarAoCarrinho('Jinx 15cm', 75.00)">Adicione no
+                            Carrinho</a>
                         <a href="#" class="fas fa-share"></a>
+
                     </div>
                 </div>
 
@@ -134,7 +144,8 @@
                     <img src="./images/lelouch.png" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Adicione no Carrinho</a>
+                        <a href="#" class="cart-btn" onclick="adicionarAoCarrinho('Lelouch 15cm', 85.00)">Adicione no
+                            Carrinho</a>
                         <a href="#" class="fas fa-share"></a>
                     </div>
                 </div>
@@ -165,9 +176,9 @@
             </div>
 
             <div class="box">
-                <span class="desconto">-5%</span>
+                <span class="desconto">-20%</span>
                 <div class="image">
-                    <img src="./images/naruto.png" alt="">
+                    <img src="./images/cinderela.png" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="cart-btn">Adicione no Carrinho</a>
@@ -176,8 +187,8 @@
                 </div>
 
                 <div class="content">
-                    <h3>Naruto 10cm</h3>
-                    <div class="price">R$23,75<span>R$25,00</span></div>
+                    <h3>Cinderela 15cm</h3>
+                    <div class="price">R$72,00<span>R$90,00</span></div>
 
                 </div>
             </div>
@@ -214,6 +225,42 @@
                 <div class="content">
                     <h3>Cody 15cm</h3>
                     <div class="price">R$76,00<span>R$80,00</span></div>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="desconto">-5%</span>
+                <div class="image">
+                    <img src="./images/naruto.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Adicione no Carrinho</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3>Naruto 10cm</h3>
+                    <div class="price">R$23,75<span>R$25,00</span></div>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="desconto">-15%</span>
+                <div class="image">
+                    <img src="./images/picsart-wall-e.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Adicione no Carrinho</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3>Wall-e 10cm</h3>
+                    <div class="price">R$30,00<span>R$35,00</span></div>
 
                 </div>
             </div>
