@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunny Amigurumis</title>
     <link rel="icon" type="png" href="./icons/trico.png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./javascript.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -16,11 +17,9 @@
 
     <header>
 
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-
         <a href="#" class="logo"> Amigurumi <span>.</span> </a>
 
+        <i class="fas fa-bars" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#menu">Menu</a>
             <a href="#sobre">Sobre</a>
@@ -34,10 +33,8 @@
             <span id="contador-carrinho"
                 style="background: red; color: white; border-radius: 50%; padding: 0 5px; font-size: 0.8em;">0</span>
             <a href="https://yorforger0703.github.io/pagina-de-login/" class="fas fa-user"></a>
-            </div>
-            </a>
         </div>
-        </div>
+
     </header>
 
     <section class="menu" id="menu">
@@ -62,17 +59,16 @@
                 <video src="./video/video-crochet.mp4" loop autoplay muted></video>
                 <h3>Melhores Amigurumis à Venda</h3>
             </div>
-
-        </div>
-        <div class="content">
-            <h3>Porque comprar conosco?</h3>
-            <p>Nossos produtos são feitos com linha ecológica própria para amigurumi. São feitos pensados exclusivamente
-                para
-                você, cliente, que merece um produto de qualidade e feito com muito carinho!</p>
-            <p>Comprando conosco, você também terá acesso a diversos benefícios como:
-            </p>
-            <a href="#" class="btn">Saiba Mais</a>
-        </div>
+            <div class="content">
+                <h3>Por que comprar conosco?</h3>
+                <p>Nossos produtos são feitos com linha ecológica própria para amigurumi. São feitos pensados
+                    exclusivamente
+                    para
+                    você, cliente, que merece um produto de qualidade e feito com muito carinho!</p>
+                <p>Comprando conosco, você também terá acesso a diversos benefícios como:
+                </p>
+                <a href="#" class="btn-saiba">Saiba Mais</a>
+            </div>
         </div>
     </section>
 
@@ -399,7 +395,7 @@
         </div>
     </section>
 
-    <section class="footer">
+    <section class="footer-box">
 
         <div class="box-container">
 
@@ -434,9 +430,25 @@
         </div>
     </section>
 </body>
-<footer>
-    <p>Desenvolvido por Juliana-2025</p>
-    <a href="https://github.com/yorforger0703" target="_blank">Github</a>
+<footer class="footer-juliana">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/juliana-oliveira-domingos-001409346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/yorforger0703" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:julianadomingos092@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <ul class="list">
+        <li> <a href="#">FAQ</a></li>
+        <li> <a href="#">Serviço</a></li>
+        <li> <a href="#">Sobre</a></li>
+        <li> <a href="#">Contato</a></li>
+        <li> <a href="#">Política de Privacidade</a></li>
+    </ul>
+    <p class="copyright">
+        ©Juliana Domingos | Todos os Direitos Reservados
+    </p>
 </footer>
+
+<script src="javascript.js"></script>
 
 </html>

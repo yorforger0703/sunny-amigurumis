@@ -20,6 +20,10 @@ html {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.3rem;
+}
+
 section {
     padding: 2rem 9%;
 }
@@ -41,15 +45,33 @@ section {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: #333;
-    color: #fff;
+    background: rgba(255, 51, 153, 0.151);
+    color: rgb(224, 111, 130);
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .btn :hover {
-    background: var(--pink);
+    background: rgb(224, 111, 130);
+}
+
+.btn-saiba {
+    display: inline-flex;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: rgba(255, 51, 153, .05);
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-saiba :hover {
+    background: rgb(224, 111, 130);
 }
 
 header {
@@ -110,22 +132,6 @@ header .fa-bars {
     display: none;
 }
 
-footer {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: rgb(236, 105, 149);
-    color: white;
-    padding: 10px;
-}
-
-footer a {
-    color: rgb(128, 0, 0);
-}
-
 
 
 
@@ -139,7 +145,7 @@ footer a {
 @media (max-width:991px) {
 
     html {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     header {
@@ -157,8 +163,24 @@ footer a {
 
 @media (max-width:768px) {
 
+    header {
+        position: absolute;
+        padding: 1.5rem; /* Diminui o padding */
+    }
+
+    header .logo {
+        font-size: 2rem; /* Diminui o tamanho da fonte do logo */
+    }
+
+    header .icons a {
+        font-size: 2rem;
+        color: #333;
+        margin-left: 1.5rem;
+    }
+
     header .fa-bars {
         display: block;
+        font-size: 2rem;
     }
 
     header .navbar {
@@ -171,7 +193,7 @@ footer a {
         clip-path: polygon(0 0, 100% 0, 0 0);
     }
 
-    header #toggler:checked ~ .navbar {
+    header #toggler:checked~.navbar {
         clip-path: polygon(0 0, 100% 0, 0 0);
     }
 
@@ -194,7 +216,7 @@ footer a {
 
 @media (max-width:450px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     header {
@@ -203,6 +225,27 @@ footer a {
 
     .heading {
         font-size: 3rem;
+    }
+
+    .contato .row .image img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    .footer-juliana {
+        padding: 2rem 3%;
+    }
+
+    .sobre .row .content .p{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre .row .content {
+        text-align: center;
     }
 }
 
@@ -221,36 +264,38 @@ footer a {
     background-position: center;
 }
 
-.menu.content {
+.menu .content {
     max-width: 50rem;
 }
 
-.menu.content a{
+.menu .content a {
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #666;
+    color: #fff;
+    padding: .9rem 3.5rem;
 }
 
-.menu.content a:hover{
-        color: pink;
+.menu .content a:hover {
+    color: rgb(224, 111, 130);
 }
 
-.menu.content h1 {
-    font-size: 50rem;
+.menu .content h1 {
+    font-size: 5rem;
     font-weight: 100;
     color: #333;
 }
 
-.menu.content span {
+.menu .content span {
     font-size: 3.5rem;
     color: pink;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
-.menu.content p {
+.menu .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: #6d6d6d;
+    font-weight: bold;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -262,6 +307,7 @@ footer a {
     flex-wrap: wrap;
     padding: 2rem 0;
     padding-bottom: 3rem;
+    text-align: center;
 }
 
 .sobre .row .video-container {
@@ -270,43 +316,66 @@ footer a {
 }
 
 .sobre .row .video-container video {
-    width: 50rem;
+    width: 100%;
     border: 1.5rem solid #fff;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 50rem;
     object-fit: cover;
+    max-width: 50rem;
+    /* Define um limite máximo para o tamanho do vídeo */
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 .sobre .row .video-container h3 {
+    width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
     background: #fff;
-    width: 50rem;
+    width: 51rem;
     padding: 1rem 2rem;
     text-align: center;
     mix-blend-mode: screen;
+    max-width: 100%;
 }
 
 .sobre .row .content {
     flex: 1 1 40rem;
+    text-align: left;
 }
 
 .sobre .row .content h3 {
-    display: flex;
     flex-wrap: wrap-reverse;
     gap: 1.5rem;
     align-items: center;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .sobre .row .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: #6d6d6d;
     padding: 5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
+}
+
+.sobre .row .content .btn-saiba {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o botão */
+    text-align: center;
+    /* Garante que o texto dentro do botão também fique centralizado */
+    width: 100%;
+    color: pink;
+}
+
+.sobre .row .content .btn-saiba:hover {
+    color: rgb(224, 111, 130);
 }
 
 .icons-container {
@@ -529,43 +598,43 @@ footer a {
     transform: scale(1.1);
 }
 
-.contato .row form .box{
-    padding:1rem;
+.contato .row form .box {
+    padding: 1rem;
     font-size: 1.7rem;
     color: #333;
     text-transform: none;
-    border: 1rem solid rgba(0,0,0,.1); 
+    border: 1rem solid rgba(0, 0, 0, .1);
     border-radius: .5rem;
     margin: .7rem 0;
     width: 100%;
 }
 
-.contato .row form .box:focus{
+.contato .row form .box:focus {
     color: pink;
 }
 
-.contato .row form textarea{
+.contato .row form textarea {
     height: 15rem;
     resize: none;
 }
 
-.footer .box-container{
+.footer-box .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.footer .box-container .box{
+.footer-box .box-container .box {
     flex: 1 1 25rem;
 }
 
-.footer .box-container .box h3{
+.footer-box .box-container .box h3 {
     color: #333;
     font-size: 2.5rem;
     padding: 1rem 0;
 }
 
-.footer .box-container .box a{
+.footer-box .box-container .box a {
     display: block;
     color: #666;
     font-size: 1.5rem;
@@ -573,15 +642,79 @@ footer a {
     padding: 1rem 0;
 }
 
-.footer .box-container .box a:hover{
-color: pink;
-text-decoration: underline;
+.footer-box .box-container .box a:hover {
+    color: pink;
+    text-decoration: underline;
 }
 
-.footer .box-container .box img{
+.footer-box .box-container .box img {
     margin-top: 1rem;
 }
 
-.lista-carrinho{
-    
+
+
+
+.footer-juliana {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: pink;
+}
+
+.footer-juliana .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgba(255, 51, 153, .05);
+}
+
+footer .social a {
+    font-size: 25px;
+    color: rgb(224, 111, 130);
+    border: 2px solid rgb(224, 111, 130);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    transform: scale(1.2)translateY(-5px);
+    background: rgb(224, 111, 130);
+    color: pink;
+}
+
+.footer-juliana ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer-juliana ul li a {
+    color: rgb(224, 111, 130);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer-juliana ul li a:hover {
+    border-bottom: 3px solid rgb(224, 111, 130);
+}
+
+.footer-juliana ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer-juliana p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(224, 111, 130);
 }

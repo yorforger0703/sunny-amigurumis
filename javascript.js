@@ -1,3 +1,5 @@
+
+
 let carrinho = [];
 
 function adicionarAoCarrinho(produto, preco) {
