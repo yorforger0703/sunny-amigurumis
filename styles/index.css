@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     color: rgb(22, 22, 22);
 }
@@ -6,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none;
     border: none;
     text-decoration: none;
@@ -64,8 +66,9 @@ section {
     font-size: 1.7rem;
 }
 
-.btn :hover {
-    background: rgb(224, 111, 130);
+.btn:hover {
+    text-decoration: rgb(224, 111, 130);
+    transform: scale(1.2)
 }
 
 .btn-saiba {
@@ -82,8 +85,9 @@ section {
     justify-content: center;
 }
 
-.btn-saiba :hover {
-    background: rgb(224, 111, 130);
+.btn-saiba:hover {
+    text-decoration: rgb(224, 111, 130);
+    transform: scale(1.2)
 }
 
 header {
@@ -217,11 +221,11 @@ header .fa-bars {
         display: block;
     }
 
-    .menu.content h3 {
+    .menu .content h3 {
         font-size: 5rem;
     }
 
-    .menu.menu.content span {
+    .menu .content span {
         font-size: 2.5rem;
     }
 }
@@ -592,7 +596,7 @@ header .fa-bars {
 .contato .row form {
     flex: 1 1 40rem;
     padding: 2rem 2.5rem;
-    box-shadow: 0 .5rem 1.5rem rgba(e, 0, 0, .1);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(9, 0, 0, .1);
     background: #fff;
     border-radius: .5rem;
