@@ -20,6 +20,18 @@ html {
     overflow-x: hidden;
 }
 
+html::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+html::-webkit-scrollbar-track {
+    background:  pink;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:  rgb(224, 111, 130);
+}
+
 p {
     font-size: 1.3rem;
 }
@@ -165,11 +177,11 @@ header .fa-bars {
 
     header {
         position: absolute;
-        padding: 1.5rem; /* Diminui o padding */
+        padding: 1.5rem;
     }
 
     header .logo {
-        font-size: 2rem; /* Diminui o tamanho da fonte do logo */
+        font-size: 2rem;
     }
 
     header .icons a {
@@ -323,7 +335,6 @@ header .fa-bars {
     height: 50rem;
     object-fit: cover;
     max-width: 50rem;
-    /* Define um limite máximo para o tamanho do vídeo */
     border: 1.5rem solid #fff;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -367,9 +378,7 @@ header .fa-bars {
 .sobre .row .content .btn-saiba {
     display: flex;
     justify-content: center;
-    /* Centraliza o botão */
     text-align: center;
-    /* Garante que o texto dentro do botão também fique centralizado */
     width: 100%;
     color: pink;
 }
