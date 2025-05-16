@@ -731,3 +731,14 @@ footer .social a:hover {
     font-size: 16px;
     color: rgb(224, 111, 130);
 }
+@media (min-width: 2560px) {
+    .sobre .row .video-container h3 {
+    transform: translateY(-30%) translateX(60%);
+    }
+}
+
+@media (min-width: 1360px) {
+    .sobre .row .video-container h3 {
+    transform: translateY(-40%) translateX(29%);
+    }
+}
